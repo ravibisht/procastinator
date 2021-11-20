@@ -1,19 +1,18 @@
-const mongoose  = require("mongoose");
+const mongoose = require("mongoose");
 
 const ProcastinatorSchema = new mongoose.Schema({
-  name : {
-    required : [true , 'Must Provide Procastination.'],
+  name: {
+    required: [ true, 'Must Provide Procastination.' ],
     type : String,
-    maxlength : [25 , `You Can't procastinate thing so long..`],
-    trim : true,
+    maxlength : [ 25, `You Can't procastinate thing so long..` ],
+    trim : true, 
   },
 
-  completed : {
+  completed: {
     type : Boolean,
     default : false
   }
 
-  
 })
 
 
